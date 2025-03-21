@@ -14,7 +14,7 @@ export default function Footer() {
       />
       {/*   <FooterSVG className="w-full h-auto rotate-180 fill-[#5555a9]" /> */}
 
-      <div className="p-5 bg-[#020203] pl-22">
+      <div className="p-5 bg-[#020203] pl-10 md:pl-22">
         <Logo className="fill-gray-700 ml-[-10px]" />
         <div className="text-gray-700 font-bold md:text-lg">
           <p>&copy; {new Date().getFullYear()}, All rights reserved</p>

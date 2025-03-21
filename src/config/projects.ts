@@ -100,7 +100,7 @@ const projectsData: PortfolioProject[] = [
       'Docker',
       'MySQL',
     ],
-    liveSiteUrl: 'https://omeganutrition.com/',
+    liveSiteUrl: '',
   },
   {
     title: 'BioClair',

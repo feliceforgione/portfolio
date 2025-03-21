@@ -45,10 +45,12 @@ export const NavMenu = ({ navLinks, showMobileNav }: NavMenuProps) => {
   return (
     <div
       className={
-        showMobileNav ? 'block mt-3 transition-all bgBlue' : 'hidden lg:block'
+        showMobileNav
+          ? 'block mt-2  transition-all bgBlue opacity-95'
+          : 'hidden lg:block'
       }
     >
-      <ul className=" lg:flex lg:flex-row border-yellow-500 border-1 md:border-none poppins">
+      <ul className=" lg:flex lg:flex-row  md:border-none poppins">
         {navLinks.map((link) => {
           return (
             <NavItem

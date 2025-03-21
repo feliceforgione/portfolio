@@ -34,7 +34,7 @@ export const Navbar = () => {
 
   return (
     <motion.div
-      className={`mx-auto w-full lg:fixed z-30 top-0 left-0 p-2 lg:px-8 lg:h-[90px] bgColor shadow-2xl ${
+      className={`mx-auto w-full fixed z-30 top-0 left-0  lg:px-8 h-10 lg:h-[90px] bgColor shadow-2xl ${
         hasShadow ? 'shadow-2xl' : 'shadow-none'
       } `}
       style={{
@@ -42,7 +42,7 @@ export const Navbar = () => {
       }}
     >
       <nav className="block lg:flex justify-between items-center">
-        <div className="flex justify-between ">
+        <div className="flex justify-between px-4 ">
           <div>
             <Link href="/">
               <Logo className="fill-yellow-500 transition-all transform hover:scale-75 w-55 lg:w-full" />

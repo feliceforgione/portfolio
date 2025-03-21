@@ -15,7 +15,7 @@ function SocialIcon({ alt_text, image_file, link }: Props) {
         alt={alt_text}
         width={24}
         height={24}
-        className=" w-6 md:w-8 mb-2 md:my-2 transition-all hover:opacity-40 transform hover:scale-75"
+        className=" w-6 lg:w-8 mb-2 lg:my-2 transition-all hover:opacity-40 transform hover:scale-75"
       />
     </a>
   );
@@ -23,7 +23,7 @@ function SocialIcon({ alt_text, image_file, link }: Props) {
 
 export default function SocialNavBar() {
   return (
-    <div className="fixed left-3 md:left-5 bottom-0 z-30 bg-transparent">
+    <div className="fixed left-3 lg:left-4 bottom-0 z-30 bg-transparent">
       <div className="flex flex-col  justify-center items-center ">
         {socialMediaLinks.map((item) => {
           return (
@@ -35,7 +35,7 @@ export default function SocialNavBar() {
             />
           );
         })}
-        <div className="h-20 md:h-32 mt-2 w-1/12 bg-yellow-400" />
+        <div className="h-20 lg:h-32 mt-2 w-1/12 bg-yellow-400" />
       </div>
     </div>
   );

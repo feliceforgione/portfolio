@@ -37,8 +37,8 @@ export function Hero() {
         animate={{ scale: 1, opacity: 1, transitionDuration: '0.2s' }}
         exit={{ x: 0, opacity: 0 }}
       >
-        <div className="flex flex-col lg:grid lg:grid-cols-12 gap-4 lg:h-[calc(100vh-10px)]  lg:mx-16">
-          <div className="flex flex-col justify-center items-center mt-10  md:col-span-7">
+        <div className="flex flex-col max-w-7xl  pt-30 lg:pt-10 lg:grid lg:grid-cols-12 gap-4 lg:h-[calc(100vh-10px)]  lg:mx-auto">
+          <div className=" flex flex-col justify-center items-center   lg:col-span-7">
             <p className="text-3xl md:text-4xl xl:text-5xl uppercase text-gray-300 poppins">
               {heroText.title}
             </p>
@@ -52,14 +52,14 @@ export function Hero() {
                 width={215}
                 height={80}
                 alt="Profile"
-                className=" opacity-60"
+                className="opacity-60 w-50 md:w-60  "
               />
               <Image
                 src="/oracle-dba-badge.png"
                 width={225}
                 height={80}
                 alt="Profile"
-                className="opacity-60"
+                className="opacity-60  w-50 md:w-60 "
               />
             </div>
           </div>
