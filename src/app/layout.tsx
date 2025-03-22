@@ -1,4 +1,5 @@
 import { Suspense } from 'react';
+import Script from 'next/script';
 import type { Metadata } from 'next';
 import { HomeFallback } from '@/components/HomeFallback';
 import { Navbar } from '@/components/NavBar';
@@ -30,23 +31,30 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className="scrollbar-thin scrollbar-thumb-sky-800 scrollbar-track-slate-800"
-    >
-      {process.env.NODE_ENV === 'development' && <ReactScan />}
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased `}
+    <>
+      <Script
+        defer
+        src="https://umami.forgeai.dev/script.js"
+        data-website-id={process.env.NEXT_PUBLIC_UMAMI_WEBSITE_ID!}
+      />
+      <html
+        lang="en"
+        className="scrollbar-thin scrollbar-thumb-sky-800 scrollbar-track-slate-800"
       >
-        <Suspense fallback={<HomeFallback />}>
-          <div className=" ">
-            <Navbar />
-            <SocialNavBar />
-            <main className="">{children}</main>
-            <Footer />
-          </div>
-        </Suspense>
-      </body>
-    </html>
+        {process.env.NODE_ENV === 'development' && <ReactScan />}
+        <body
+          className={`${geistSans.variable} ${geistMono.variable} antialiased `}
+        >
+          <Suspense fallback={<HomeFallback />}>
+            <div className=" ">
+              <Navbar />
+              <SocialNavBar />
+              <main className="">{children}</main>
+              <Footer />
+            </div>
+          </Suspense>
+        </body>
+      </html>
+    </>
   );
 }
