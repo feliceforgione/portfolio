@@ -55,6 +55,7 @@ const projectsData: PortfolioProject[] = [
       'PostGIS',
       'React Hook Form',
     ],
+    liveSiteUrl: 'https://foodiegram.vercel.app/',
   },
 
   {
