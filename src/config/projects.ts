@@ -27,10 +27,26 @@ const projectsData: PortfolioProject[] = [
     ],
   },
   {
+    title: 'TubeNotes',
+    img: '/projects/tubenotes.png',
+    liveSiteUrl:
+      'https://chromewebstore.google.com/detail/tubenotes-%E2%80%93-youtube-summa/fofnploipdanjioaflcdnfobgfdhecmo?authuser=1&hl=en',
+    description:
+      'AI-powered Chrome extension designed to enhance your YouTube experience by summarizing videos, generating detailed outlines, and allowing you to bookmark important moments.',
+    category: '',
+    features: [
+      'AI-Powered Summaries – Get a quick and accurate summary of any YouTube video using ChatGPT and Google Gemini, saving you time while ensuring you grasp the main points.',
+      'Detailed Video Outline – Automatically generates a structured breakdown of the video, so you can scan key topics at a glance without watching the entire video.',
+      'Bookmark Time Points – Easily save and revisit important moments in the video. Whether it’s an insightful comment, a key tutorial step, or an interesting discussion, your bookmarks help you jump back instantly.',
+      'YouTube Chapters Support – If the video includes chapters, TubeNotes displays them neatly for quick navigation.',
+    ],
+    technologies: ['Next.js', 'TypeScript', 'OpenAI', 'MUI'],
+  },
+  {
     title: 'Foodiegram',
     img: '/projects/foodiegram.jpg',
     description:
-      'Share what you are eating with others and find new delcious foods to try. Find interesting foods in your area.',
+      'Share what you are eating with others and find new delicious foods to try. Find interesting foods in your area.',
     category: '',
     features: [
       'Explore new food posts that are within your current location',
@@ -40,7 +56,7 @@ const projectsData: PortfolioProject[] = [
       'Notifications of when people follow you or like your posts',
       'Find food posts from specific food establishments',
       'Suggestions for people to follow based on your likes',
-      'Infitinte Scroll food feed',
+      'Infinite Scroll food feed',
     ],
     technologies: [
       'React 18',
@@ -127,7 +143,7 @@ const projectsData: PortfolioProject[] = [
     title: 'Forgia',
     img: '/projects/forgia.jpg',
     description:
-      'Forgia Brick Oven Pizzeria is a brick oven pizzeria serving you delicious authentic Italian cuisine in a casual setting. Family owned and operated, with over 40 years experience crafting the perfect pizza using only the freshest ingredients. Dine-in or take out, buon appetito!',
+      'Forgia Brick Oven Pizzeria is a brick oven pizzeria serving you delicious authentic Italian cuisine in a casual setting. Family owned and operated, with over 40 years experience crafting the perfect pizza using only the freshest ingredients.',
     category: '',
     features: [],
     technologies: ['TypeScript', 'NextJs', 'Stripe'],
